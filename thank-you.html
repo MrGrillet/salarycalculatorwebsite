@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FLC9BDJ9TK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-FLC9BDJ9TK');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator V - Thank you!</title>
+  <meta name="description" content="Calculator V is the ultimate security app, cleverly disguised as a fully functional calculator. Securely store your sensitive photos, videos, and notes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+      tailwind.config = {
+          theme: {
+              extend: {
+                  fontFamily: {
+                      sans: ['Inter', 'system-ui', 'sans-serif'],
+                  },
+              },
+          },
+      }
+  </script>
+  <link rel="stylesheet" href="styles.css">
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '947718596937025');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=947718596937025&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+</head>
+<body class="bg-gray-50">
+   
+    <div class="bg-white">
+      <header class="absolute inset-x-0 top-0 z-50">
+        <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+          <div class="flex lg:flex-1">
+            <a href="#" class="-m-1.5 p-1.5 flex items-center">
+              <img class="h-8 w-auto rounded-lg" src="./images/calculator_icon.png" alt="">
+              <span class="ml-2 text-xl">Calculator V</span>
+            </a>
+          </div>
+          <div class="flex lg:hidden">
+            <button id="mobile-menu-button" type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+              <span class="sr-only">Open main menu</span>
+              <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </button>
+          </div>
+          <div class="hidden lg:flex lg:gap-x-12">
+         <!--    <a href="#" class="text-sm/6 font-semibold text-gray-900">Product</a>
+            <a href="#" class="text-sm/6 font-semibold text-gray-900">Features</a>
+            <a href="#" class="text-sm/6 font-semibold text-gray-900">Marketplace</a>
+            <a href="#" class="text-sm/6 font-semibold text-gray-900">Company</a> -->
+          </div> 
+          <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+        <!--     <a href="https://apps.apple.com/app/YOUR-APP-ID" class="inline-block" onclick="gtag('event', 'app_store_click', {'event_category': 'CTA', 'event_label': 'App Store Link - Header'});"  onclick="fbq('track', 'AppStoreClick');">
+              <img src="./images/download_app_store_button.svg" alt="Download on the App Store" class="h-12">
+            </a> -->
+          </div>
+        </nav>
+         <!--  Mobile menu, show/hide based on menu open state. -->
+        <div class="lg:hidden" role="dialog" aria-modal="true">
+           <!--  Background backdrop, show/hide based on slide-over state. -->
+          <div class="fixed inset-0 z-50" style="display: none"></div>
+          <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+            <div class="flex items-center justify-between">
+              <a href="#" class="-m-1.5 p-1.5 flex items-center">
+              <img class="h-8 w-auto rounded-lg" src="./images/calculator_icon.png" alt="">
+                <span class="ml-2 text-xl">Calculator V</span>
+              </a>
+              <button id="mobile-menu-close" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                <span class="sr-only">Close menu</span>
+                <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div class="mt-6 flow-root">
+              <div class="-my-6 divide-y divide-gray-500/10">
+               <div class="space-y-2 py-6">
+               <!--    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Product</a>
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Features</a>
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Marketplace</a>  -->
+                  <a href="/support.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Support</a>
+                </div> 
+                <div class="py-6">
+                  <a href="https://apps.apple.com/app/YOUR-APP-ID" class="inline-block" onclick="gtag('event', 'app_store_click', {'event_category': 'CTA', 'event_label': 'App Store Link - Header'});"  onclick="fbq('track', 'AppStoreClick');">
+                    <img src="./images/download_app_store_button.svg" alt="Download on the App Store" class="h-12">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="relative isolate pt-4">
+        <svg class="absolute inset-0 -z-10 size-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
+          <defs>
+            <pattern id="83fd4e5a-9d52-42fc-97b6-718e5d7ee527" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
+              <path d="M100 200V.5M.5 .5H200" fill="none" />
+            </pattern>
+          </defs>
+          <svg x="50%" y="-1" class="overflow-visible fill-gray-50">
+            <path d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z" stroke-width="0" />
+          </svg>
+          <rect width="100%" height="100%" stroke-width="0" fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" />
+        </svg>
+        <div class="mx-auto max-w-7xl px-6 py-10 sm:py-14 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-14">
+          <div class="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
+            <h1 class="mt-10 text-pretty tracking-tight font-semibold text-gray-900 text-5xl">Thank you</h1>
+            <p class="mt-8 text-pretty text-gray-500 sm:text-xl/8 max-w-lg font-light">Calculator V allows you to <span class="font-medium text-black">hide your most 🌶️ photos or videos, important passcodes and travel documents where no one will ever look</span> - behind a fully functional calculator</p>
+            <div class="mt-10 flex items-center gap-x-6">
+                <a href="https://apps.apple.com/app/YOUR-APP-ID" class="inline-block" onclick="gtag('event', 'app_store_click', {'event_category': 'CTA', 'event_label': 'App Store Link - Hero Section'});"  onclick="fbq('track', 'AppStoreClick');">
+                    <img src="./images/download_app_store_button.svg" alt="Download on the App Store" class="h-12">
+                </a>
+            </div>
+          </div>
+          <div class="mt-16 sm:mt-24 lg:mt-0 lg:shrink-0 lg:grow">
+            <svg viewBox="0 0 366 729" role="img" class="mx-auto w-[22.875rem] max-w-full drop-shadow-xl">
+              <title>App screenshot</title>
+              <defs>
+                <clipPath id="2ade4387-9c63-4fc4-b754-10e687a0d332">
+                  <rect width="316" height="684" rx="36" />
+                </clipPath>
+              </defs>
+              <path fill="#4B5563" d="M363.315 64.213C363.315 22.99 341.312 1 300.092 1H66.751C25.53 1 3.528 22.99 3.528 64.213v44.68l-.857.143A2 2 0 0 0 1 111.009v24.611a2 2 0 0 0 1.671 1.973l.95.158a2.26 2.26 0 0 1-.093.236v26.173c.212.1.398.296.541.643l-1.398.233A2 2 0 0 0 1 167.009v47.611a2 2 0 0 0 1.671 1.973l1.368.228c-.139.319-.314.533-.511.653v16.637c.221.104.414.313.56.689l-1.417.236A2 2 0 0 0 1 237.009v47.611a2 2 0 0 0 1.671 1.973l1.347.225c-.135.294-.302.493-.49.607v377.681c0 41.213 22 63.208 63.223 63.208h95.074c.947-.504 2.717-.843 4.745-.843l.141.001h.194l.086-.001 33.704.005c1.849.043 3.442.37 4.323.838h95.074c41.222 0 63.223-21.999 63.223-63.212v-394.63c-.259-.275-.48-.796-.63-1.47l-.011-.133 1.655-.276A2 2 0 0 0 366 266.62v-77.611a2 2 0 0 0-1.671-1.973l-1.712-.285c.148-.839.396-1.491.698-1.811V64.213Z" />
+              <path fill="#343E4E" d="M16 59c0-23.748 19.252-43 43-43h246c23.748 0 43 19.252 43 43v615c0 23.196-18.804 42-42 42H58c-23.196 0-42-18.804-42-42V59Z" />
+              <foreignObject width="316" height="684" transform="translate(24 24)" clip-path="url(#2ade4387-9c63-4fc4-b754-10e687a0d332)">
+                <img src="./images/explainer.gif" alt="" />
+              </foreignObject>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>    
+
+    <footer class="border-t border-gray-200">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="pb-12 pt-8 md:pt-6 space-y-4">
+          <p class="text-sm text-gray-500">This page uses Facebook Pixel and Google Analytics to track user activity for the purpose of improving ad performance and understanding how visitors interact with our site. Your privacy is important to us. For more details, please review our <a href="./privacy-policy.html">Privacy Policy</a></p>
+          <p class="text-sm text-gray-500">© Armoury6 Limited 2024. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
